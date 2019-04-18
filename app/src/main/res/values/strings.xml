@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="main_title">Dobra igra :)</string>
+    <string name="new_game_label">Nova igra</string>
+    <string name="settings_label">Nastavitve</string>
+    <string name="about_label">Vizitka</string>
+    <string name="exit_label">Izhod</string>
+    <string name="about_text">To je prikazano v vizitki</string>
+    <string name="close_label">Zapri</string>
+</resources>

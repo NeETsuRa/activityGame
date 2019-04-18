@@ -1,0 +1,43 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\Development Proeckts\\GameProject\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "map": [
+                {
+                    "source": "D:\\Development Proeckts\\GameProject\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "5,7,8,6,2,3,4",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "220,315,380,269,57,111,165",
+                        "endColumns": "47,64,45,44,52,52,53",
+                        "endOffsets": "263,375,421,309,105,159,214"
+                    },
+                    "to": {
+                        "startLines": "6,7,8,9,10,11,12",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "222,270,335,381,426,479,532",
+                        "endColumns": "47,64,45,44,52,52,53",
+                        "endOffsets": "265,330,376,421,474,527,581"
+                    }
+                },
+                {
+                    "source": "D:\\Development Proeckts\\GameProject\\app\\src\\main\\res\\values\\color.xml",
+                    "from": {
+                        "startLines": "2,4,5,3",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "56,142,182,103",
+                        "endColumns": "46,39,40,38",
+                        "endOffsets": "98,177,218,137"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,102,142,183",
+                        "endColumns": "46,39,40,38",
+                        "endOffsets": "97,137,178,217"
+                    }
+                }
+            ]
+        }
+    ]
+}
