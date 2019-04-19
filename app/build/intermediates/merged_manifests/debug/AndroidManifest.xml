@@ -11,8 +11,7 @@
     <application
         android:debuggable="true"
         android:icon="@drawable/ic_launcher"
-        android:label="@string/main_title"
-        android:testOnly="true" >
+        android:label="@string/main_title" >
         <activity
             android:name="si.delavnicaFNM.game.GameProjectActivity"
             android:label="@string/main_title" >

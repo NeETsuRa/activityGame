@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Fri Apr 19 00:24:27 CEST 2019
+0.baseType=DIRECTORY
+0.base=D\:\\Development Proeckts\\activityGame\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\out
+0.path=classes.dex
+0.set=DEX
+count=1

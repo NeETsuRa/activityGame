@@ -1,7 +1,7 @@
 #Internal package file, do not edit.
-#Fri Apr 19 00:01:03 CEST 2019
+#Fri Apr 19 00:23:47 CEST 2019
 0.baseType=DIRECTORY
-0.base=D\:\\Development Proeckts\\GameProject\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out
+0.base=D\:\\Development Proeckts\\activityGame\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out
 0.path=classes.dex
 0.set=DEX
 count=1

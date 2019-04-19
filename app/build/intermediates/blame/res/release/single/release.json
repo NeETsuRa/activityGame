@@ -1,0 +1,58 @@
+[
+    {
+        "merged": "D:\\Development Proeckts\\activityGame\\app\\build\\intermediates\\res\\merged\\release\\layout_main.xml.flat",
+        "source": "D:\\Development Proeckts\\activityGame\\app\\src\\main\\res\\layout\\main.xml"
+    },
+    {
+        "merged": "D:\\Development Proeckts\\activityGame\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi_hrbtna_stran_kartice.png.flat",
+        "source": "D:\\Development Proeckts\\activityGame\\app\\src\\main\\res\\drawable-hdpi\\hrbtna_stran_kartice.png"
+    },
+    {
+        "merged": "D:\\Development Proeckts\\activityGame\\app\\build\\intermediates\\res\\merged\\release\\layout_pricni.xml.flat",
+        "source": "D:\\Development Proeckts\\activityGame\\app\\src\\main\\res\\layout\\pricni.xml"
+    },
+    {
+        "merged": "D:\\Development Proeckts\\activityGame\\app\\build\\intermediates\\res\\merged\\release\\layout_game_data_input_teams.xml.flat",
+        "source": "D:\\Development Proeckts\\activityGame\\app\\src\\main\\res\\layout\\game_data_input_teams.xml"
+    },
+    {
+        "merged": "D:\\Development Proeckts\\activityGame\\app\\build\\intermediates\\res\\merged\\release\\layout_tocke.xml.flat",
+        "source": "D:\\Development Proeckts\\activityGame\\app\\src\\main\\res\\layout\\tocke.xml"
+    },
+    {
+        "merged": "D:\\Development Proeckts\\activityGame\\app\\build\\intermediates\\res\\merged\\release\\layout_kartica.xml.flat",
+        "source": "D:\\Development Proeckts\\activityGame\\app\\src\\main\\res\\layout\\kartica.xml"
+    },
+    {
+        "merged": "D:\\Development Proeckts\\activityGame\\app\\build\\intermediates\\res\\merged\\release\\layout_about.xml.flat",
+        "source": "D:\\Development Proeckts\\activityGame\\app\\src\\main\\res\\layout\\about.xml"
+    },
+    {
+        "merged": "D:\\Development Proeckts\\activityGame\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_ic_launcher.png.flat",
+        "source": "D:\\Development Proeckts\\activityGame\\app\\src\\main\\res\\drawable-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Development Proeckts\\activityGame\\app\\build\\intermediates\\res\\merged\\release\\raw_besede.txt.flat",
+        "source": "D:\\Development Proeckts\\activityGame\\app\\src\\main\\res\\raw\\besede.txt"
+    },
+    {
+        "merged": "D:\\Development Proeckts\\activityGame\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi_ic_launcher.png.flat",
+        "source": "D:\\Development Proeckts\\activityGame\\app\\src\\main\\res\\drawable-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Development Proeckts\\activityGame\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi_sprednja_stran_kartice.png.flat",
+        "source": "D:\\Development Proeckts\\activityGame\\app\\src\\main\\res\\drawable-hdpi\\sprednja_stran_kartice.png"
+    },
+    {
+        "merged": "D:\\Development Proeckts\\activityGame\\app\\build\\intermediates\\res\\merged\\release\\raw_pojmizakarticepantomima.csv.flat",
+        "source": "D:\\Development Proeckts\\activityGame\\app\\src\\main\\res\\raw\\pojmizakarticepantomima.csv"
+    },
+    {
+        "merged": "D:\\Development Proeckts\\activityGame\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi_ic_launcher.png.flat",
+        "source": "D:\\Development Proeckts\\activityGame\\app\\src\\main\\res\\drawable-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Development Proeckts\\activityGame\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi_ic_launcher.png.flat",
+        "source": "D:\\Development Proeckts\\activityGame\\app\\src\\main\\res\\drawable-ldpi\\ic_launcher.png"
+    }
+]
