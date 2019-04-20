@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
+// Main application class defined in Manifest
 public class GameProjectActivity extends Activity implements OnClickListener{
 	static final int BG_COLOR = Color.rgb(0x59, 0x6f, 0x87);
 	
@@ -18,13 +19,12 @@ public class GameProjectActivity extends Activity implements OnClickListener{
 	final static int rezultatActivity = 103;
 	final static int idPricni = 104;
 	
-    /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
         
-        //ustvarimo click listener
+        //define all the buttons on the main site and create an click listener for them
         View aboutBtn = findViewById(R.id.about_button);
         aboutBtn.setOnClickListener(this);
         aboutBtn.getBackground().setColorFilter(new LightingColorFilter(0x1464F4, 0x000000));
@@ -38,7 +38,8 @@ public class GameProjectActivity extends Activity implements OnClickListener{
         newTocke.setOnClickListener(this);
         newTocke.getBackground().setColorFilter(new LightingColorFilter(0x1464F4, 0x000000));
     }
-    
+
+    // handle the results of other applications (sub applications)
     @Override 
     public void onActivityResult(int requestCode, int resultCode, Intent data) {     
       super.onActivityResult(requestCode, resultCode, data); 
@@ -48,13 +49,9 @@ public class GameProjectActivity extends Activity implements OnClickListener{
         	  igra = (Igra)data.getSerializableExtra("test");
         	  for(int i = 0; i<igra.vrniEkipe().size();i++)
         		  igra.vrniEkipe().get(i).dolociBarvo();
-        	  /*
-        	  	tukaj pride koda za pricni
-              */
         	  
   			Intent i2 = new Intent(this, Pricni.class);
 			i2.putExtra("podatki.v.igro",igra);
-			//startActivity(i2);
 			startActivityForResult(i2, idPricni);
           } 
           break; 
@@ -64,11 +61,9 @@ public class GameProjectActivity extends Activity implements OnClickListener{
 
 
 	public void onClick(View v) {
-		// TODO Auto-generated method stub
+    	// set the actions for differnt buttons on the main site
 		switch(v.getId()){
 		case R.id.about_button:
-//			Intent i1= new Intent(this,VizitkaActivity.class);
-//			startActivity(i1);
 			VizitkaDialog dlg = new VizitkaDialog(this);
 			dlg.show();
 			break;
@@ -76,7 +71,6 @@ public class GameProjectActivity extends Activity implements OnClickListener{
 			igra = new Igra();
 			Intent i2 = new Intent(this, GameDataInputTeams.class);
 			i2.putExtra("si.delavnicaFNM.game.Igra",igra);
-			//startActivity(i2);
 			startActivityForResult(i2, rezultatActivity);
 			break;
 		case R.id.settings_button:
@@ -87,18 +81,6 @@ public class GameProjectActivity extends Activity implements OnClickListener{
 			Tocke toc = new Tocke(this);
 			toc.show();
 			break;
-			
 		}
-		
-		
 	}
-	/*
-	public void izpisTock(View view)
-	{
-		Igra ig = new Igra();
-		Tocke tocke = new Tocke(ig);
-//		tocke.izpisTock();
-		
-	}
-    */
 }
