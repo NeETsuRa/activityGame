@@ -55,14 +55,12 @@ public class GameDataInputTeams extends Activity implements OnClickListener{
 		state = DI_NO_TEAMS;
 		igra = null;
 	}
-	
-	/** Called when the activity is first created. */
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.game_data_input_teams);
-        
-        //ustvarimo click listener
+
         View btn2 = findViewById(R.id.btnTeamNo2);
         btn2.setOnClickListener(this);
         View btn3 = findViewById(R.id.btnTeamNo3);
@@ -120,7 +118,6 @@ public class GameDataInputTeams extends Activity implements OnClickListener{
 			break;
 		case ID_NEXT_BTN:
 		case ID_SETTINGS_BTN:
-			//polovi vnesene podatke in jih shrani
 			if(igra==null){
 				Intent intent = getIntent();
 				igra = (Igra)intent.getSerializableExtra("si.delavnicaFNM.game.Igra");
@@ -146,7 +143,6 @@ public class GameDataInputTeams extends Activity implements OnClickListener{
 				currentTeamInput++;
 				noOfCurrTeamPlayers = 2;
 			}else{
-				//preklop na layout za vnos nastavitev
 				stateChanged = true;
 				state = DI_SETTINGS;
 			}
@@ -178,14 +174,13 @@ public class GameDataInputTeams extends Activity implements OnClickListener{
 				teamDataInputLayout(currentTeamInput);
 				break;
 			case DI_SETTINGS:
-				settingsDataInputLayout(); // spremeni na ustrezno
+				settingsDataInputLayout();
 				break;
 			}
 		}
 	}
 	
 	private int getGameDifficulty(int select) {
-		// TODO Auto-generated method stub
 		int r=-1;
 		switch(select){
 			case 0:
@@ -202,7 +197,6 @@ public class GameDataInputTeams extends Activity implements OnClickListener{
 	}
 
 	private int getRoundLength(int select) {
-		// TODO Auto-generated method stub
 		int r=-1;
 		switch(select){
 			case 0:
@@ -219,7 +213,6 @@ public class GameDataInputTeams extends Activity implements OnClickListener{
 	}
 
 	private int getGameLength(int select) {
-		// TODO Auto-generated method stub
 		int r=-1;
 		switch(select){
 			case 0:
@@ -309,13 +302,7 @@ public class GameDataInputTeams extends Activity implements OnClickListener{
 		tv.setGravity(Gravity.CENTER_HORIZONTAL);
 		tv.setTextSize(30);
 		layout.addView(tv);
-		
-		/*
-		igra.dolociDolzinoIgre(10);
-		igra.dolociDolzinoRunde(50);
-		igra.dolociTezavnost(1);
-		*/
-		
+
 		tv = new TextView(this);
 		tv.setText("Izberi dolžino igre: ");
 		tv.setGravity(Gravity.CENTER_HORIZONTAL);
