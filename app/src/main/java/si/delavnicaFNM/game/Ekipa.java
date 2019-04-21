@@ -10,10 +10,7 @@ import java.util.Vector;
 
 import android.graphics.Color;
 
-/**
- * @author Tim
- *
- */
+//definition of the class defining the Team('s)
 public class Ekipa implements Serializable{
 	transient static final int MAX_NO_PLAYERS = 4;
 	
@@ -25,6 +22,7 @@ public class Ekipa implements Serializable{
 	private int tocke;
 	private Vector<Integer> vrstniRed=new Vector<Integer>();
 	private int treIgr;
+
 	Ekipa(int aID,String aIme,int aStIg,Vector<String> aImena){
 		id=aID;
 		ime=aIme;
