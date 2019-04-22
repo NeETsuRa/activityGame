@@ -13,30 +13,25 @@ public class Igra implements Serializable {
 	private int tezavnost;
 	private int dolzinaIgre;
 	private int dolzinaRunde;
-	transient private int stanje; //glede na stanje bodo razlicna okna
+	transient private int stanje;
 	
 	public Igra(){
-		this.stanje = STANJE_NOVAIGRA; // stanje za dolocitev ekip, tezavnosti, dolzine igre, ...
+		this.stanje = STANJE_NOVAIGRA;
 		ekipe = new Vector<Ekipa>();
-		
 	}
 	
 	public void dolociSteviloEkip(int stEkip){
 		this.stEkip = stEkip;
 	}
-	
 	public void dodajEkipo(Ekipa ekipa){
 		ekipe.add(ekipa);
 	}
-	
 	public void dolociTezavnost(int tezavnost){
 		this.tezavnost = tezavnost;
 	}
-	
 	public void dolociDolzinoIgre(int dolzinaIgre){
 		this.dolzinaIgre = dolzinaIgre;
 	}
-	
 	public void dolociDolzinoRunde(int dolzinaRunde){
 		this.dolzinaRunde = dolzinaRunde;
 	}
@@ -49,8 +44,6 @@ public class Igra implements Serializable {
 	public int vrniTezavnost(){
 		return tezavnost;
 	}
-	
-	
 	public int vrniStEkip() {
 		return ekipe.size();
 	}
@@ -60,6 +53,5 @@ public class Igra implements Serializable {
 	public Ekipa vrniEkipo(int ID) {
 		return ekipe.get(ID);
 	}
-	
 }
 
