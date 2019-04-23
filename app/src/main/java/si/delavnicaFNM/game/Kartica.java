@@ -130,35 +130,6 @@ public class Kartica {
 		close();
 
 		pojem = dobiBesedo();
-		
-		// branje iz datoteke
-		//Log.v("andrej",readRawTextFile(context, R.raw.pojmizakarticepantomima));
-		
-		
-		/*String a=readRawTextFile(context, R.raw.pojmizakarticepantomima);
-		
-		for(int i=0; i<a.length(); i++){
-			int j=0;
-			if (a.charAt(i)==','){
-				if (j==0){
-					Log.v("lahko","");
-				}
-				
-				if (j==1){
-					Log.v("srednje","");
-				}
-				
-				if (j==2){
-					Log.v("teško","");
-				}
-				
-			}
-			
-		}
-
-		*/
-		
-		
 	}
 
 	public static String readRawTextFile(Context ctx, int resId) {
@@ -200,5 +171,4 @@ public class Kartica {
 
 		return pojem;
 	}
-
 }
