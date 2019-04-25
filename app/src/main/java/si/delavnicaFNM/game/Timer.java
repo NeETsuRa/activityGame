@@ -1,13 +1,11 @@
 package si.delavnicaFNM.game;
 
-
 import android.os.CountDownTimer;
-
 
 public class Timer {
 	Pricni pricni;
-	private int casTime; //Èas ki ga nastavimo na zaèetku igre -> setTimer(int);
-	private long timeLeft; //preostanek èasa - preostanek sekund, ki še jih ima igralecc na voljo
+	private int casTime;
+	private long timeLeft;
 	private CasCount cas;
 	public Timer (Pricni pricni, int casTime)
 	{
@@ -20,13 +18,13 @@ public class Timer {
     	super(millisInFuture, countDownInterval);
     	}
     	@Override
-    	public void onFinish() //Ko ès poteèe..
+    	public void onFinish()
     	{ 
     		timeLeft = 0;	
     	}
     	@Override
-    	public void onTick(long millisUntilFinished) { //Ko èas teèe..
-    		timeLeft = millisUntilFinished/1000; //shranimo preostanek sekund
+    	public void onTick(long millisUntilFinished) {
+    		timeLeft = millisUntilFinished/1000;
     		pricni.onTimerChanged(millisUntilFinished);
     	}
     }
@@ -34,27 +32,21 @@ public class Timer {
 	{
 		casTime = newTimer;
 	}
-    
 	public int getTimer()
 	{
 		return casTime;
 	}
-	
 	public void startTimer()
 	{
 		cas.start();
 	}
-    
 	public void stopTimer()
 	{
-		//long preostanek = timeLeft;
 		cas.cancel();
-//		return preostanek;
 	}
     public int resetTimer()
     {	
     	cas.cancel();
     	return casTime;
     }
-
 }
