@@ -24,6 +24,5 @@ public class VizitkaDialog extends Dialog implements OnClickListener {
 		if (v.getId()==R.id.btnZapriVizitko) {
 			this.dismiss();
 		}
-		
 	}
 }
