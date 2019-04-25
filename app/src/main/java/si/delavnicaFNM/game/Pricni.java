@@ -18,7 +18,7 @@ import android.widget.Toast;
 
 public class Pricni extends Activity {
 	Igra igra;
-	int treEkipa; //trenutna ekipa
+	int treEkipa;
 	int treIgralec; 
 	Kartica karta;
 	Timer timer;
@@ -49,7 +49,7 @@ public class Pricni extends Activity {
 	        tocke.add((TextView) findViewById(R.id.ekipa4));
 	        tocke.add((TextView) findViewById(R.id.ekipa5));
 	        tocke.add((TextView) findViewById(R.id.ekipa6));
-			
+
 	        treEkipa=0;
 	        vrstniRed=new Vector<Integer>(igra.vrniStEkip());
 	        for(int i=0;i<igra.vrniStEkip();i++){
@@ -58,41 +58,30 @@ public class Pricni extends Activity {
 	        }
 	       Collections.shuffle(vrstniRed,new Random());
 	       treIgralec= igra.vrniEkipo(vrniIdTreEkipe()).vrniNaslednjegaIgralca();
-			
-	        
+
 	        bar = (ProgressBar) findViewById(R.id.cas);
 	        slika=(Button) findViewById(R.id.kartica);
 	        slika.setBackgroundDrawable(getResources().getDrawable(R.drawable.hrbtna_stran_kartice));
 	        uganil=(Button) findViewById(R.id.uganil);
 	        niUganil=(Button) findViewById(R.id.niUganil);
 	        ime=(TextView) findViewById(R.id.imeIgralca);
-	        
-	        
-	        
+
 	        uganil.getBackground().setColorFilter(new LightingColorFilter(0x00EE00, 0x000000));
 	       
 	        uganil.setEnabled(false);
 	        niUganil.setEnabled(false);
 	        izpisIgralca();
-	        
-	        // 
-	
 	 }
 	
 	public void klikKartica(View v){
 		
 		uganil.setEnabled(true);
 		niUganil.setEnabled(true);
-		
-		
-		//slika.setBackgroundResource(R.drawable.sprednja_stran_kartice);
+
 		slika.setBackgroundDrawable(getResources().getDrawable(R.drawable.sprednja_stran_kartice));
 		slika.setText(karta.vrniBesedo());
 		slika.setClickable(false);
 
-		
-		
-		
 		timerX =  new CountDownTimer(igra.vrniDolzinoRunde()*1000, 10) {
 	           	
 	           	@Override
@@ -123,10 +112,6 @@ public class Pricni extends Activity {
 		treEkipa=(treEkipa+1)%igra.vrniStEkip();
 		treIgralec=igra.vrniEkipo(vrniIdTreEkipe()).vrniNaslednjegaIgralca();
 		izpisIgralca();
-		
-		
-		
-		
 	}
 	
 	public void klikUganil(View v){
@@ -157,8 +142,4 @@ public class Pricni extends Activity {
 	 public int vrniIdTreEkipe(){
 		 return vrstniRed.get(treEkipa);
 	 }
-	
-	
-	
-		
 }
